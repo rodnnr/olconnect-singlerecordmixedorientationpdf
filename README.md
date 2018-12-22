@@ -25,16 +25,21 @@ It is assumed here that each record is a multi page with mixed portrait and land
           printSections[i].enabled = false;
            }
            */
+	   
            /* Get the first section (portrait or landscape) and enable it
            and apply the first page as its background
            */
+	   
            let firstSection = record.tables.detail[0].fields.pageWidth > 215 ? printSections.Landscape : printSections.Portrait;
-        applyBackground(firstSection,1,1);
+	   
+           applyBackground(firstSection,1,1);
+	   
         /* Loop through each of the remaining pages, get the page orientation,
         then clone the corresponding section and apply the corresponding page
         as the background of the cloned section
         */
-         for(let i=1; i<numClones; i++){
+	
+        for(let i=1; i<numClones; i++){
         if(record.tables.detail[i].fields.pageWidth > 215){
             let landscapeClone = printSections.Landscape.clone();
                 landscapeClone.name = "landscapeClone_" + i;
@@ -47,7 +52,9 @@ It is assumed here that each record is a multi page with mixed portrait and land
                 firstSection.addAfter(portraitClone);
 	        }
          }
-         function applyBackground(section, start, end){
+	 
+	 
+        function applyBackground(section, start, end){
         section.enabled = true;
         section.background.source = BackgroundResource.DATAMAPPER_PDF;
         section.background.allPages = false;
