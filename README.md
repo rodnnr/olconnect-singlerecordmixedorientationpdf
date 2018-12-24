@@ -12,7 +12,7 @@ It is assumed here that each record is a multi page with mixed portrait and land
 ### Connect Designer - Control Script
 
 - Add a control script in Connect Designer
-```cs
+```javascript
         /* this script is for demonstration purposes only and is subject to the T&C of the MIT license.
         This script applies the correct portrait or landscape page background to the correct section.
         It is assumed that each record is multi page with mixed portrait and\or landscape orientation
