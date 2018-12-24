@@ -8,10 +8,10 @@ It is assumed here that each record is a multi page with mixed portrait and land
 	> steps.currentPageWidth;
 - This creates a detail table containing the width and\or height of each pages. The length of the detail table will be equal to the total number of pages in the record.
 ### Connect Designer - Control Script
-```cs
-- Add a control script in Connect Designer
 
-        /* this script is for demonstration purposes only.
+- Add a control script in Connect Designer
+```cs
+        /* this script is for demonstration purposes only and is subject to the T&C of the MIT license.
         This script applies the correct portrait or landscape page background to the correct section.
         It is assumed that each record is multi page with mixed portrait and\or landscape orientation
         */
