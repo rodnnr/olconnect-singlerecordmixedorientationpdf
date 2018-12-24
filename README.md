@@ -5,7 +5,9 @@ It is assumed here that each record is a multi page with mixed portrait and land
 - Use a Repeat step to loop through each page of the PDF *until no more elements.*
 - With the Reapeat step, the "Target Type" of the Go To step should be set to "page"
 - Within the Reapeat step, Extract the current page width and\or height values. Example, to extract the current page width:
-	> steps.currentPageWidth;
+```cs
+	steps.currentPageWidth;
+```
 - This creates a detail table containing the width and\or height of each pages. The length of the detail table will be equal to the total number of pages in the record.
 ### Connect Designer - Control Script
 
